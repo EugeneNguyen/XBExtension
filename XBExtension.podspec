@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "XBExtension"
-  s.version          = "0.0.1.4"
+  s.version          = "0.0.1.5"
   s.summary          = "A lot of category class, give a short way to make everything easier for development"
   s.description      = <<-DESC
                        A lot of category class, give a short way to make everything easier for development
@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
                        
                        - MBProgressHUD shortcut
                        - JSONKit
+                       - Adding automatically log for asihttprequest
+                       - NSLogger with cocoa lumberjack
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
@@ -37,4 +39,7 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'NSLogger-CocoaLumberjack-connector', '~> 1.3'
+  s.dependency 'ASIHTTPRequest', '~> 1.8'
+  s.dependency 'MBProgressHUD', '~> 0.8'
+  s.dependency 'JSONKit-NoWarning', '~> 1.1'
 end

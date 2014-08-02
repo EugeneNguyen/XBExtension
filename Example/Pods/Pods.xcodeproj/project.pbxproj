@@ -52,6 +52,7 @@
 		457D2E88271548FFAE966A8D /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C82645DA6413F896A1A5D /* NSValue+Expecta.m */; };
 		47E69AB8B60143F9BBDE2225 /* libPods-Tests-XBExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0723D63FA464F07A8FCA542 /* libPods-Tests-XBExtension.a */; };
 		4953EDA5198D0CD500A07D37 /* NSObject+support.m in Sources */ = {isa = PBXBuildFile; fileRef = 4953EDA3198D0CD500A07D37 /* NSObject+support.m */; };
+		49D3DEF1198D40C8001B60B6 /* ASIHTTPRequest+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D3DEF0198D40C8001B60B6 /* ASIHTTPRequest+log.m */; };
 		49E8A90522D6448FBEE28CBD /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = 855EAC7951F1417AABDF6778 /* EXPMatchers+beTruthy.h */; };
 		4BE0563519E24DE787D185D4 /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = DA76CF1486E1431BB272B67D /* EXPMatchers+conformTo.m */; };
 		4F771C18382644F881964370 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B91B4E83C0B4C52A829F0CE /* Pods-Tests-dummy.m */; };
@@ -247,6 +248,8 @@
 		4953EDA2198D0CD500A07D37 /* NSObject+support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+support.h"; sourceTree = "<group>"; };
 		4953EDA3198D0CD500A07D37 /* NSObject+support.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+support.m"; sourceTree = "<group>"; };
 		4953EDA6198D0D7800A07D37 /* XBExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBExtension.h; sourceTree = "<group>"; };
+		49D3DEEF198D40C8001B60B6 /* ASIHTTPRequest+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASIHTTPRequest+log.h"; sourceTree = "<group>"; };
+		49D3DEF0198D40C8001B60B6 /* ASIHTTPRequest+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASIHTTPRequest+log.m"; sourceTree = "<group>"; };
 		4A01ADB321C54A1EB68F2CF9 /* XCTestLog+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestLog+Specta.h"; path = "src/XCTestLog+Specta.h"; sourceTree = "<group>"; };
 		4F890290209D414CBE366C05 /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "src/matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
 		5280ACB10FFD4455B675C0F1 /* EXPMatchers+FBSnapshotTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+FBSnapshotTest.h"; sourceTree = "<group>"; };
@@ -532,6 +535,8 @@
 				4953EDA1198D0CD500A07D37 /* .gitkeep */,
 				4953EDA2198D0CD500A07D37 /* NSObject+support.h */,
 				4953EDA3198D0CD500A07D37 /* NSObject+support.m */,
+				49D3DEEF198D40C8001B60B6 /* ASIHTTPRequest+log.h */,
+				49D3DEF0198D40C8001B60B6 /* ASIHTTPRequest+log.m */,
 				4953EDA6198D0D7800A07D37 /* XBExtension.h */,
 			);
 			name = Classes;
@@ -1036,6 +1041,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F771C18382644F881964370 /* Pods-Tests-dummy.m in Sources */,
+				49D3DEF1198D40C8001B60B6 /* ASIHTTPRequest+log.m in Sources */,
 				4953EDA5198D0CD500A07D37 /* NSObject+support.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
