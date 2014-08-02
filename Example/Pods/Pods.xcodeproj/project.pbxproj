@@ -246,7 +246,7 @@
 		4953EDA1198D0CD500A07D37 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		4953EDA2198D0CD500A07D37 /* NSObject+support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+support.h"; sourceTree = "<group>"; };
 		4953EDA3198D0CD500A07D37 /* NSObject+support.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+support.m"; sourceTree = "<group>"; };
-		4953EDA4198D0CD500A07D37 /* XBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBExtension.h; sourceTree = "<group>"; };
+		4953EDA6198D0D7800A07D37 /* XBExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBExtension.h; sourceTree = "<group>"; };
 		4A01ADB321C54A1EB68F2CF9 /* XCTestLog+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestLog+Specta.h"; path = "src/XCTestLog+Specta.h"; sourceTree = "<group>"; };
 		4F890290209D414CBE366C05 /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "src/matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
 		5280ACB10FFD4455B675C0F1 /* EXPMatchers+FBSnapshotTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+FBSnapshotTest.h"; sourceTree = "<group>"; };
@@ -532,7 +532,7 @@
 				4953EDA1198D0CD500A07D37 /* .gitkeep */,
 				4953EDA2198D0CD500A07D37 /* NSObject+support.h */,
 				4953EDA3198D0CD500A07D37 /* NSObject+support.m */,
-				4953EDA4198D0CD500A07D37 /* XBExtension.h */,
+				4953EDA6198D0D7800A07D37 /* XBExtension.h */,
 			);
 			name = Classes;
 			path = Pod/Classes;
