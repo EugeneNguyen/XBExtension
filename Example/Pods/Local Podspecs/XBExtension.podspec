@@ -9,26 +9,22 @@
 
 Pod::Spec.new do |s|
   s.name             = "XBExtension"
-  s.version          = "0.0.1.1"
-  s.summary          = "A lot of category class, give a short way to make everything easier for development"
+  s.version          = "0.1.0"
+  s.summary          = "A short description of XBExtension."
   s.description      = <<-DESC
-                       A lot of category class, give a short way to make everything easier for development
-                       Including:
-                       
-                       - MBProgressHUD shortcut
-                       - JSONKit
+                       An optional longer description of XBExtension
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/EugeneNguyen/XBExtension"
+  s.homepage         = "https://github.com/<GITHUB_USERNAME>/XBExtension"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "eugene nguyen" => "xuanbinh91@gmail.com" }
-  s.source           = { :git => "https://github.com/EugeneNguyen/XBExtension.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/eugene_nguyen91'
+  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/XBExtension.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '6.0'
+  s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
