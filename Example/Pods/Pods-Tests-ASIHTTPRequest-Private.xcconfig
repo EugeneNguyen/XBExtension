@@ -1,0 +1,5 @@
+#include "Pods-Tests-ASIHTTPRequest.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/ASIHTTPRequest" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/ASIHTTPRequest" "${PODS_ROOT}/Headers/CocoaLumberjack" "${PODS_ROOT}/Headers/Expecta" "${PODS_ROOT}/Headers/Expecta+Snapshots" "${PODS_ROOT}/Headers/FBSnapshotTestCase" "${PODS_ROOT}/Headers/JSONKit-NoWarning" "${PODS_ROOT}/Headers/MBProgressHUD" "${PODS_ROOT}/Headers/NSLogger" "${PODS_ROOT}/Headers/NSLogger-CocoaLumberjack-connector" "${PODS_ROOT}/Headers/Reachability" "${PODS_ROOT}/Headers/Specta" "${PODS_ROOT}/Headers/XBExtension" ${PODS_TESTS_ASIHTTPREQUEST_HEADER_SEARCH_PATHS}
+OTHER_LDFLAGS = -ObjC ${PODS_TESTS_ASIHTTPREQUEST_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}

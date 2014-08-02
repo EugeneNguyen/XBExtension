@@ -7,6 +7,7 @@
 //
 
 #import "ASIHTTPRequest+log.h"
+#import "JSONKit.h"
 
 @implementation ASIHTTPRequest (log)
 
@@ -40,7 +41,7 @@
 /* ALWAYS CALLED ON MAIN THREAD! */
 - (void)reportFailure
 {
-    DDLogInfo(@"\nRequest failed\nNSURL: %@\nError: %@", [self url], [[self error] localizedDescription]);
+    NSLog(@"\nRequest failed\nNSURL: %@\nError: %@", [self url], [[self error] localizedDescription]);
 	if (delegate && [delegate respondsToSelector:didFailSelector]) {
 		[delegate performSelector:didFailSelector withObject:self];
 	}
