@@ -242,7 +242,7 @@
 		43340008FAC84FC28B832D64 /* Pods-XBExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XBExtension-dummy.m"; sourceTree = "<group>"; };
 		46382263F1AB4E619290107C /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Diff.m"; sourceTree = "<group>"; };
 		4827A2771FCA48F09CA6C50B /* Pods-XBExtension-XBExtension-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XBExtension-XBExtension-Private.xcconfig"; sourceTree = "<group>"; };
-		492C9D73198CEA3E00DE347D /* XBExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBExtension.h; sourceTree = "<group>"; };
+		492C9D74198D04E600DE347D /* XBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XBExtension.h; path = Pod/Classes/XBExtension.h; sourceTree = "<group>"; };
 		4A01ADB321C54A1EB68F2CF9 /* XCTestLog+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestLog+Specta.h"; path = "src/XCTestLog+Specta.h"; sourceTree = "<group>"; };
 		4F890290209D414CBE366C05 /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "src/matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
 		5280ACB10FFD4455B675C0F1 /* EXPMatchers+FBSnapshotTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+FBSnapshotTest.h"; sourceTree = "<group>"; };
@@ -725,8 +725,8 @@
 		D612541E627B43229D553D88 /* XBExtension */ = {
 			isa = PBXGroup;
 			children = (
+				492C9D74198D04E600DE347D /* XBExtension.h */,
 				A072C13747B343DFBA034A2E /* Support Files */,
-				492C9D73198CEA3E00DE347D /* XBExtension.h */,
 			);
 			name = XBExtension;
 			path = ../..;
