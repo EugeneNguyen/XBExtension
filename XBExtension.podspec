@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "XBExtension"
-  s.version          = "0.0.1.5"
+  s.version          = "0.0.1.7"
   s.summary          = "A lot of category class, give a short way to make everything easier for development"
   s.description      = <<-DESC
                        A lot of category class, give a short way to make everything easier for development
@@ -42,4 +42,5 @@ Pod::Spec.new do |s|
   s.dependency 'ASIHTTPRequest', '~> 1.8'
   s.dependency 'MBProgressHUD', '~> 0.8'
   s.dependency 'JSONKit-NoWarning', '~> 1.1'
+  s.dependency 'SDWebImage-ProgressView', '~> 0.3'
 end
