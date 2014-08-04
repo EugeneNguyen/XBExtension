@@ -8,8 +8,6 @@
 
 #import "ASIFormDataRequest+log.h"
 #import "JSONKit.h"
-#import "DDLog.h"
-#define ddLogLevel LOG_LEVEL_VERBOSE
 
 @interface ASIFormDataRequest (logextra)
 
@@ -24,11 +22,11 @@
     id object = [self.responseString objectFromJSONString];
     if (object)
     {
-        DDLogInfo(@"\nRequest successful\nJSON OK\nURL %@\nSend %@\nReceive %@", [self url], [self postData], [[self responseString] objectFromJSONString]);
+        NSLog(@"\nRequest successful\nJSON OK\nURL %@\nSend %@\nReceive %@", [self url], [self postData], [[self responseString] objectFromJSONString]);
     }
     else
     {
-        DDLogInfo(@"\nRequest successful\nJSON failed\nURL %@\nSend %@\nReceive %@", [self url], [self postData], [self responseString]);
+        NSLog(@"\nRequest successful\nJSON failed\nURL %@\nSend %@\nReceive %@", [self url], [self postData], [self responseString]);
     }
     
 	if (delegate && [delegate respondsToSelector:didFinishSelector]) {
@@ -49,7 +47,7 @@
 /* ALWAYS CALLED ON MAIN THREAD! */
 - (void)reportFailure
 {
-    DDLogInfo(@"\nRequest failed\nNSURL: %@\nSend: %@\nError: %@", [self url], [self postData], [[self error] localizedDescription]);
+    NSLog(@"\nRequest failed\nNSURL: %@\nSend: %@\nError: %@", [self url], [self postData], [[self error] localizedDescription]);
 	if (delegate && [delegate respondsToSelector:didFailSelector]) {
 		[delegate performSelector:didFailSelector withObject:self];
 	}
