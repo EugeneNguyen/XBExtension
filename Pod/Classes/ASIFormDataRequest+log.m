@@ -8,6 +8,7 @@
 
 #import "ASIFormDataRequest+log.h"
 #import "JSONKit.h"
+#import "NSLogger.h"
 
 @interface ASIFormDataRequest (logextra)
 
@@ -22,11 +23,11 @@
     id object = [self.responseString objectFromJSONString];
     if (object)
     {
-        NSLog(@"\nRequest successful\nJSON OK\nURL %@\nSend %@\nReceive %@", [self url], [self postData], [[self responseString] objectFromJSONString]);
+        LoggerNetwork(0, @"\nRequest successful\nJSON OK\nURL %@\nSend %@\nReceive %@", [self url], [self postData], [[self responseString] objectFromJSONString]);
     }
     else
     {
-        NSLog(@"\nRequest successful\nJSON failed\nURL %@\nSend %@\nReceive %@", [self url], [self postData], [self responseString]);
+        LoggerNetwork(0, @"\nRequest successful\nJSON failed\nURL %@\nSend %@\nReceive %@", [self url], [self postData], [self responseString]);
     }
     
 	if (delegate && [delegate respondsToSelector:didFinishSelector]) {
@@ -47,7 +48,7 @@
 /* ALWAYS CALLED ON MAIN THREAD! */
 - (void)reportFailure
 {
-    NSLog(@"\nRequest failed\nNSURL: %@\nSend: %@\nError: %@", [self url], [self postData], [[self error] localizedDescription]);
+    LoggerNetwork(0, @"\nRequest failed\nNSURL: %@\nSend: %@\nError: %@", [self url], [self postData], [[self error] localizedDescription]);
 	if (delegate && [delegate respondsToSelector:didFailSelector]) {
 		[delegate performSelector:didFailSelector withObject:self];
 	}
