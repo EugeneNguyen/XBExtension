@@ -11,6 +11,12 @@
 #import "DDLog.h"
 #define ddLogLevel LOG_LEVEL_VERBOSE
 
+@interface ASIFormDataRequest (logextra)
+
+@property (retain) NSMutableArray *postData;
+
+@end
+
 @implementation ASIFormDataRequest (log)
 
 - (void)reportFinished
