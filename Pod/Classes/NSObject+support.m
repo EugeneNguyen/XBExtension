@@ -10,6 +10,7 @@
 #import "DDASLLogger.h"
 #import "DDTTYLogger.h"
 #import "DDNSLoggerLogger.h"
+#import "DDLog.h"
 
 @implementation NSObject (support)
 
@@ -26,7 +27,6 @@
 
 - (void)setupLog
 {
-    
     
     [DDLog addLogger:[DDASLLogger sharedInstance]];
     [DDLog addLogger:[DDTTYLogger sharedInstance]];

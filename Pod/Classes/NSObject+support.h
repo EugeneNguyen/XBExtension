@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#define NSLog(frmt, ...) DDLogInfo(frmt, ##__VA_ARGS__)
+//#define NSLog(frmt, ...) DDLogInfo(frmt, ##__VA_ARGS__)
 
 @interface NSObject (support)
 

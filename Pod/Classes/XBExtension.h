@@ -10,5 +10,7 @@
 #define Pods_XBExtension_h
 
 #import "NSObject+support.h"
+#import "ASIFormDataRequest+log.h"
+#import "DDLog.h"
 
 #endif

@@ -1,26 +1,28 @@
 //
-//  ASIHTTPRequest+log.m
-//  Online-Coach
+//  ASIFormDataRequest+log.m
+//  Pods
 //
-//  Created by Binh Nguyen Xuan on 8/2/14.
-//  Copyright (c) 2014 libreteam. All rights reserved.
+//  Created by Binh Nguyen Xuan on 8/4/14.
+//
 //
 
-#import "ASIHTTPRequest+log.h"
+#import "ASIFormDataRequest+log.h"
 #import "JSONKit.h"
+#import "DDLog.h"
+#define ddLogLevel LOG_LEVEL_VERBOSE
 
-@implementation ASIHTTPRequest (log)
+@implementation ASIFormDataRequest (log)
 
 - (void)reportFinished
 {
     id object = [self.responseString objectFromJSONString];
     if (object)
     {
-        NSLog(@"\nRequest successful\nJSON OK\nURL %@\n%@", [self url], [[self responseString] objectFromJSONString]);
+        DDLogInfo(@"\nRequest successful\nJSON OK\nURL %@\nSend %@\nReceive %@", [self url], [self postData], [[self responseString] objectFromJSONString]);
     }
     else
     {
-        NSLog(@"\nRequest successful\nJSON failed\nURL %@\n%@", [self url], [self responseString]);
+        DDLogInfo(@"\nRequest successful\nJSON failed\nURL %@\nSend %@\nReceive %@", [self url], [self postData], [self responseString]);
     }
     
 	if (delegate && [delegate respondsToSelector:didFinishSelector]) {
@@ -41,7 +43,7 @@
 /* ALWAYS CALLED ON MAIN THREAD! */
 - (void)reportFailure
 {
-    NSLog(@"\nRequest failed\nNSURL: %@\nError: %@", [self url], [[self error] localizedDescription]);
+    DDLogInfo(@"\nRequest failed\nNSURL: %@\nSend: %@\nError: %@", [self url], [self postData], [[self error] localizedDescription]);
 	if (delegate && [delegate respondsToSelector:didFailSelector]) {
 		[delegate performSelector:didFailSelector withObject:self];
 	}
