@@ -12,5 +12,6 @@
 #import "NSObject+support.h"
 #import "ASIFormDataRequest+log.h"
 #import "NSLogger.h"
+#import "UIView+support.h"
 
 #endif

@@ -10,4 +10,6 @@
 
 @interface ASIFormDataRequest (log)
 
+- (id)responseJSON;
+
 @end

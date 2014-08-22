@@ -18,6 +18,11 @@
 
 @implementation ASIFormDataRequest (log)
 
+- (id)responseJSON
+{
+    return [self.responseString mutableObjectFromJSONString];
+}
+
 - (void)reportFinished
 {
     id object = [self.responseString objectFromJSONString];
