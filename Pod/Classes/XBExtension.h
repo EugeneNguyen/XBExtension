@@ -9,9 +9,6 @@
 #ifndef Pods_XBExtension_h
 #define Pods_XBExtension_h
 
-#import "NSObject+support.h"
-#import "ASIFormDataRequest+log.h"
-#import "NSLogger.h"
-#import "UIView+support.h"
+#import "XBAppUtil.h"
 
 #endif

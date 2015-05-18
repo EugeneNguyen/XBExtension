@@ -1,1 +1,0 @@
-PODS_XBEXTENSION_REACHABILITY_OTHER_LDFLAGS = -framework SystemConfiguration

@@ -13,7 +13,21 @@ To use this extension inside your project, just import
 
     #import "XBExtension.h"
 
-## Requirements
+## How to use
+
+very simple. just use which function that you want
+
+```objective-c
+[XBAppUtil call:@"123456789"];
+[XBAppUtil callPromt:@"123456789"];
+[XBAppUtil openURL:@"https://github.com/EugeneNguyen/XBExtension"];
+```
+
+Remember to import umbrella header first
+
+```objective-c
+#import <XBExtension.h>
+```
 
 ## Installation
 

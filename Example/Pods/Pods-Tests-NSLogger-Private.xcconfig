@@ -1,5 +1,0 @@
-#include "Pods-Tests-NSLogger.xcconfig"
-GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1 ${PODS_TESTS_NSLOGGER_GCC_PREPROCESSOR_DEFINITIONS}
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/NSLogger" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/ASIHTTPRequest" "${PODS_ROOT}/Headers/CocoaLumberjack" "${PODS_ROOT}/Headers/Expecta" "${PODS_ROOT}/Headers/Expecta+Snapshots" "${PODS_ROOT}/Headers/FBSnapshotTestCase" "${PODS_ROOT}/Headers/JSONKit-NoWarning" "${PODS_ROOT}/Headers/MBProgressHUD" "${PODS_ROOT}/Headers/NSLogger" "${PODS_ROOT}/Headers/NSLogger-CocoaLumberjack-connector" "${PODS_ROOT}/Headers/Reachability" "${PODS_ROOT}/Headers/Specta" "${PODS_ROOT}/Headers/XBExtension"
-OTHER_LDFLAGS = -ObjC ${PODS_TESTS_NSLOGGER_OTHER_LDFLAGS}
-PODS_ROOT = ${SRCROOT}
