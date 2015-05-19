@@ -8,4 +8,5 @@
 
 #import "XBAppUtil.h"
 #import "UIColor+XBExtension.h"
-
+#import "NSDictionary+XBExtension.h"
+#import "NSArray+XBExtension.h"
