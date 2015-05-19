@@ -5,9 +5,11 @@ PODS:
     - Expecta (~> 0.3)
     - FBSnapshotTestCase (= 1.6)
   - FBSnapshotTestCase (1.8.1)
+  - MBProgressHUD (0.9.1)
   - Specta (0.2.1)
-  - XBExtension (0.1):
+  - XBExtension (0.2.1):
     - AVHexColor
+    - MBProgressHUD
 
 DEPENDENCIES:
   - Expecta
@@ -25,7 +27,8 @@ SPEC CHECKSUMS:
   Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
   Expecta+Snapshots: 40c5ec43b43da3bae957f14fed5dc9177d08ec8b
   FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
-  XBExtension: 54a4039292b873bcfc23755aec91741bf80581f7
+  XBExtension: d8b71f9668a38137c95989548f24ba0e4a1ca46a
 
 COCOAPODS: 0.34.4

@@ -10,6 +10,7 @@
 
 @interface NSArray (XBExtension)
 
-+ (NSArray *)arrayWithContentsOfPlist:(NSString *)plist;
++ (NSArray *)arrayWithContentsOfPlist:(NSString *)plistname;
++ (NSArray *)arrayWithContentsOfPlist:(NSString *)plistname bundleName:(NSString *)name;
 
 @end

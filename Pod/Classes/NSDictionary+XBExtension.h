@@ -10,6 +10,7 @@
 
 @interface NSDictionary (XBExtension)
 
-+ (NSDictionary *)dictionaryWithContentsOfPlist:(NSString *)plist;
++ (NSDictionary *)dictionaryWithContentsOfPlist:(NSString *)plistname;
++ (NSDictionary *)dictionaryWithContentsOfPlist:(NSString *)plistname bundleName:(NSString *)name;
 
 @end

@@ -9,17 +9,14 @@
 
 Pod::Spec.new do |s|
   s.name             = "XBExtension"
-  s.version          = "0.1"
+  s.version          = "0.2.1"
   s.summary          = "A lot of category class, give a short way to make everything easier for development"
   s.description      = <<-DESC
                        A lot of category class, give a short way to make everything easier for development
                        Including:
-                       
-                       - MBProgressHUD shortcut
-                       - JSONKit
-                       - Adding automatically log for asihttprequest
-                       - NSLogger with cocoa lumberjack
+
                        - Open phonecall, promted phonecall, open url in safari.
+                       - Shortened HexColor and RGB color with integer value (over 255, not over 1 anymore).
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
@@ -40,4 +37,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AVHexColor'
+  s.dependency 'MBProgressHUD'
 end
