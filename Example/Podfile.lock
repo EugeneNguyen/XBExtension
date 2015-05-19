@@ -1,11 +1,13 @@
 PODS:
+  - AVHexColor (2.0.0)
   - Expecta (1.0.0)
   - Expecta+Snapshots (1.3.2):
     - Expecta (~> 0.3)
     - FBSnapshotTestCase (= 1.6)
   - FBSnapshotTestCase (1.8.1)
   - Specta (0.2.1)
-  - XBExtension (0.0.1.14)
+  - XBExtension (0.1):
+    - AVHexColor
 
 DEPENDENCIES:
   - Expecta
@@ -19,10 +21,11 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
+  AVHexColor: 33e5e102f3b6f3acd002779183ee226e21870c28
   Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
   Expecta+Snapshots: 40c5ec43b43da3bae957f14fed5dc9177d08ec8b
   FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
   Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
-  XBExtension: 04baf861cea9ba4ef3ac87875386a25f1682f23f
+  XBExtension: 54a4039292b873bcfc23755aec91741bf80581f7
 
 COCOAPODS: 0.34.4

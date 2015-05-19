@@ -13,7 +13,7 @@
 
 + (BOOL)call:(NSString *)phoneNumber
 {
-    NSString *phonenumber = [[phoneNumber stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] componentsSeparatedByString:@"+"][1];
+    NSString *phonenumber = [phoneNumber stringByReplacingOccurrencesOfString:@" " withString:@""];
     NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"tel:%@",phonenumber]];
     
     if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
@@ -28,7 +28,7 @@
 
 + (BOOL)callPromt:(NSString *)phoneNumber
 {
-    NSString *phonenumber = [[phoneNumber stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] componentsSeparatedByString:@"+"][1];
+    NSString *phonenumber = [phoneNumber stringByReplacingOccurrencesOfString:@" " withString:@""];
     NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt:%@",phonenumber]];
     
     if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {

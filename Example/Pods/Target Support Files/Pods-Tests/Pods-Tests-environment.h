@@ -6,6 +6,12 @@
 // project.
 
 
+// AVHexColor
+#define COCOAPODS_POD_AVAILABLE_AVHexColor
+#define COCOAPODS_VERSION_MAJOR_AVHexColor 2
+#define COCOAPODS_VERSION_MINOR_AVHexColor 0
+#define COCOAPODS_VERSION_PATCH_AVHexColor 0
+
 // Expecta
 #define COCOAPODS_POD_AVAILABLE_Expecta
 #define COCOAPODS_VERSION_MAJOR_Expecta 1
@@ -32,8 +38,7 @@
 
 // XBExtension
 #define COCOAPODS_POD_AVAILABLE_XBExtension
-// This library does not follow semantic-versioning,
-// so we were not able to define version macros.
-// Please contact the author.
-// Version: 0.0.1.14.
+#define COCOAPODS_VERSION_MAJOR_XBExtension 0
+#define COCOAPODS_VERSION_MINOR_XBExtension 1
+#define COCOAPODS_VERSION_PATCH_XBExtension 0
 

@@ -17,17 +17,28 @@ To use this extension inside your project, just import
 
 very simple. just use which function that you want
 
+Remember to import umbrella header first
+
+```objective-c
+#import <XBExtension.h>
+```
+
+1. AppUtil allow you shortened some action.
+
 ```objective-c
 [XBAppUtil call:@"123456789"];
 [XBAppUtil callPromt:@"123456789"];
 [XBAppUtil openURL:@"https://github.com/EugeneNguyen/XBExtension"];
 ```
 
-Remember to import umbrella header first
+2. Using XBColor to make things better
 
 ```objective-c
-#import <XBExtension.h>
+XBHexColor(@"abcdef");
+XBRGBColor(255, 0, 0);
 ```
+
+
 
 ## Installation
 

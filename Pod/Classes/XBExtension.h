@@ -10,5 +10,6 @@
 #define Pods_XBExtension_h
 
 #import "XBAppUtil.h"
+#import "UIColor+XBExtension.h"
 
 #endif
