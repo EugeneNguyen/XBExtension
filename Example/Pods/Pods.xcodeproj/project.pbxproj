@@ -122,6 +122,8 @@
 		B3100E3434AE1B99BE73EA8E /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = EFCD3C3E808EE1A9A051EF71 /* EXPMatcher.h */; };
 		B4C2AD7FB6DC9FACF5E8CE28 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15E957B47766E95BBE5C40E /* XCTest.framework */; };
 		B631B0C45BC4F20A4AD08FE1 /* NSObject+XBExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A703152A84ADCE00321EFCC /* NSObject+XBExtension.h */; };
+		B69DB28A1B1EE62300A54551 /* NSString+XBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B69DB2891B1EE62300A54551 /* NSString+XBExtension.m */; };
+		B69DB28D1B1EE63300A54551 /* NSDate+XBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B69DB28C1B1EE63300A54551 /* NSDate+XBExtension.m */; };
 		B87060B808D96BA7E6F942FD /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8E29374E2D6A27C8EC263 /* EXPMatchers+beInstanceOf.m */; };
 		BB6ABB17BF016CFD5DE8259D /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8B2C66811BE43448F91653 /* EXPMatchers+beginWith.m */; };
 		BB8F7D1B33367A554B066364 /* NSObject+XBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D1215C39CD641D9F56101 /* NSObject+XBExtension.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -435,6 +437,10 @@
 		B11006B0F4DFB8212AA9D3A3 /* EXPMatchers+raise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raise.m"; path = "Expecta/Matchers/EXPMatchers+raise.m"; sourceTree = "<group>"; };
 		B2700B038C004945160F8537 /* Pods-Tests-XBExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-XBExtension-prefix.pch"; sourceTree = "<group>"; };
 		B56C083CA2A2E5A787535C5C /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
+		B69DB2881B1EE62300A54551 /* NSString+XBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+XBExtension.h"; path = "Pod/Classes/NSString+XBExtension.h"; sourceTree = "<group>"; };
+		B69DB2891B1EE62300A54551 /* NSString+XBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+XBExtension.m"; path = "Pod/Classes/NSString+XBExtension.m"; sourceTree = "<group>"; };
+		B69DB28B1B1EE63300A54551 /* NSDate+XBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+XBExtension.h"; path = "Pod/Classes/NSDate+XBExtension.h"; sourceTree = "<group>"; };
+		B69DB28C1B1EE63300A54551 /* NSDate+XBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+XBExtension.m"; path = "Pod/Classes/NSDate+XBExtension.m"; sourceTree = "<group>"; };
 		B6A73213E40DB58CD31FD73D /* Pods-XBExtension-AVHexColor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-XBExtension-AVHexColor-dummy.m"; path = "../Pods-XBExtension-AVHexColor/Pods-XBExtension-AVHexColor-dummy.m"; sourceTree = "<group>"; };
 		BAEC5EB2E549D32FAA1DCE83 /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
 		BB445CAEA7CA2BD0F59137DF /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
@@ -973,6 +979,10 @@
 				DCFB9220CD48F0BEBC056171 /* XBAppUtil.m */,
 				5053E4FADE613AEF94D30389 /* XBExtension.h */,
 				0930E852E0033BF5854195E9 /* Support Files */,
+				B69DB2881B1EE62300A54551 /* NSString+XBExtension.h */,
+				B69DB2891B1EE62300A54551 /* NSString+XBExtension.m */,
+				B69DB28B1B1EE63300A54551 /* NSDate+XBExtension.h */,
+				B69DB28C1B1EE63300A54551 /* NSDate+XBExtension.m */,
 			);
 			name = XBExtension;
 			path = ../..;
@@ -1466,6 +1476,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C323531B0B4D1F2F2239B1A /* Pods-Tests-dummy.m in Sources */,
+				B69DB28D1B1EE63300A54551 /* NSDate+XBExtension.m in Sources */,
+				B69DB28A1B1EE62300A54551 /* NSString+XBExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
