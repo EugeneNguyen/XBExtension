@@ -13,33 +13,47 @@
 #import "UIImage+Compare.h"
 #import "UIImage+Diff.h"
 
+#import <objc/runtime.h>
+
 #import <UIKit/UIKit.h>
 
 NSString *const FBSnapshotTestControllerErrorDomain = @"FBSnapshotTestControllerErrorDomain";
 
 NSString *const FBReferenceImageFilePathKey = @"FBReferenceImageFilePathKey";
 
+typedef struct RGBAPixel {
+  char r;
+  char g;
+  char b;
+  char a;
+} RGBAPixel;
+
+@interface FBSnapshotTestController ()
+
+@property (readonly, nonatomic, copy) NSString *testName;
+
+@end
+
 @implementation FBSnapshotTestController
 {
-  NSString *_testName;
   NSFileManager *_fileManager;
 }
 
 #pragma mark -
 #pragma mark Lifecycle
 
-- (instancetype)initWithTestClass:(Class)testClass;
+- (id)initWithTestClass:(Class)testClass;
 {
-  return [self initWithTestName:NSStringFromClass(testClass)];
+    return [self initWithTestName:NSStringFromClass(testClass)];
 }
 
-- (instancetype)initWithTestName:(NSString *)testName
+- (id)initWithTestName:(NSString *)testName
 {
-  if ((self = [super init])) {
-    _testName = [testName copy];
-    _fileManager = [[NSFileManager alloc] init];
-  }
-  return self;
+    if ((self = [super init])) {
+        _testName = [testName copy];
+        _fileManager = [[NSFileManager alloc] init];
+    }
+    return self;
 }
 
 #pragma mark -
@@ -154,8 +168,8 @@ NSString *const FBReferenceImageFilePathKey = @"FBReferenceImageFilePathKey";
   }
 
   NSString *diffPath = [self _failedFilePathForSelector:selector
-                                             identifier:identifier
-                                           fileNameType:FBTestSnapshotFileNameTypeFailedTestDiff];
+                                               identifier:identifier
+                                             fileNameType:FBTestSnapshotFileNameTypeFailedTestDiff];
 
   UIImage *diffImage = [referenceImage diffWithImage:testImage];
   NSData *diffImageData = UIImagePNGRepresentation(diffImage);
@@ -230,7 +244,7 @@ typedef NS_ENUM(NSUInteger, FBTestSnapshotFileNameType) {
   if (0 < identifier.length) {
     fileName = [fileName stringByAppendingFormat:@"_%@", identifier];
   }
-  if ([[UIScreen mainScreen] scale] > 1) {
+  if ([[UIScreen mainScreen] scale] > 1.0) {
     fileName = [fileName stringByAppendingFormat:@"@%.fx", [[UIScreen mainScreen] scale]];
   }
   fileName = [fileName stringByAppendingPathExtension:@"png"];

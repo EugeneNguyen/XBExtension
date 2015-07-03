@@ -12,32 +12,34 @@
 
 #import "FBSnapshotTestController.h"
 
+@interface FBSnapshotTestCase ()
+
+@property (readwrite, nonatomic, retain) FBSnapshotTestController *snapshotController;
+
+@end
+
 @implementation FBSnapshotTestCase
-{
-  FBSnapshotTestController *_snapshotController;
-}
 
 - (void)setUp
 {
   [super setUp];
-  _snapshotController = [[FBSnapshotTestController alloc] initWithTestName:NSStringFromClass([self class])];
+  self.snapshotController = [[FBSnapshotTestController alloc] initWithTestName:NSStringFromClass([self class])];
 }
 
 - (void)tearDown
 {
-  _snapshotController = nil;
+  self.snapshotController = nil;
   [super tearDown];
 }
 
 - (BOOL)recordMode
 {
-  return _snapshotController.recordMode;
+  return self.snapshotController.recordMode;
 }
 
 - (void)setRecordMode:(BOOL)recordMode
 {
-  NSAssert1(_snapshotController, @"%s cannot be called before [super setUp]", __FUNCTION__);
-  _snapshotController.recordMode = recordMode;
+  self.snapshotController.recordMode = recordMode;
 }
 
 - (BOOL)compareSnapshotOfLayer:(CALayer *)layer
