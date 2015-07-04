@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface UITextField (XBExtension)
+
 @property (nonatomic, retain) NSCharacterSet *disabledCharacterSet;
+
+- (void)activeUsernameLimitation;
+- (void)activePasswordLimitation;
+- (void)activeEmailLimitation;
 
 @end

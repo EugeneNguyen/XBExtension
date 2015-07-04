@@ -28,9 +28,24 @@ NSString * const kDisabledCharacterSet = @"kDisabledCharacterSet";
     self.text = [[self.text componentsSeparatedByCharactersInSet:self.disabledCharacterSet] componentsJoinedByString:@""];
 }
 
-- (id)disabledCharacterSetaa
+- (id)disabledCharacterSet
 {
     return objc_getAssociatedObject(self, (__bridge const void *)(kDisabledCharacterSet));
+}
+
+- (void)activeUsernameLimitation
+{
+    self.disabledCharacterSet = [[NSCharacterSet characterSetWithCharactersInString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_."] invertedSet];
+}
+
+- (void)activePasswordLimitation
+{
+    self.disabledCharacterSet = [[NSCharacterSet characterSetWithCharactersInString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_."] invertedSet];
+}
+
+- (void)activeEmailLimitation
+{
+    self.disabledCharacterSet = [[NSCharacterSet characterSetWithCharactersInString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_.@"] invertedSet];
 }
 
 @end
