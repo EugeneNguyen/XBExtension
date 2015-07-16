@@ -28,7 +28,15 @@
     return [self sortedArrayUsingComparator:^NSComparisonResult(id  __nonnull obj1, id  __nonnull obj2) {
         NSString *s1 = [obj1 objectForKey:orderField];
         NSString *s2 = [obj2 objectForKey:orderField];
-        return [s1 compare:s2];
+        NSComparisonResult result = [s1 compare:s2];
+        if (accending)
+        {
+            return result;
+        }
+        else
+        {
+            return - result;
+        }
     }];
 }
 
@@ -37,15 +45,27 @@
     return [self sortedArrayUsingComparator:^NSComparisonResult(id  __nonnull obj1, id  __nonnull obj2) {
         float f1 = [[obj1 objectForKey:orderField] floatValue];
         float f2 = [[obj2 objectForKey:orderField] floatValue];
+        NSComparisonResult result;
         if (f1 > f2)
         {
-            return NSOrderedDescending;
+            result = NSOrderedDescending;
         }
-        if (f1 < f2)
+        else if (f1 < f2)
         {
-            return NSOrderedAscending;
+            result = NSOrderedAscending;
         }
-        return NSOrderedSame;
+        else
+        {
+            result = NSOrderedSame;
+        }
+        if (accending)
+        {
+            return result;
+        }
+        else
+        {
+            return - result;
+        }
     }];
 }
 
