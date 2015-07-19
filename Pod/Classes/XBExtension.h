@@ -14,3 +14,4 @@
 #import "UIView+XBExtension.h"
 #import "NSDate+XBExtension.h"
 #import "UITextField+XBExtension.h"
+#import "UILabel+XBExtension.h"

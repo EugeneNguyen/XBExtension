@@ -139,6 +139,7 @@
 		B27D2B774856D06FE7BFF64D /* XBAppUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FACEA2C9AA1BE1119FA2899 /* XBAppUtil.h */; };
 		B6434505226CE3F5AEF7E287 /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACE012911CFD3766806A639 /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B695F9C61B469C6900BCFF5D /* UITextField+XBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B695F9C51B469C6900BCFF5D /* UITextField+XBExtension.m */; };
+		B6B906CE1B5BEF82000B1721 /* UILabel+XBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B906CD1B5BEF82000B1721 /* UILabel+XBExtension.m */; };
 		B7B8075CE4DA1DFDC46D6079 /* AVHexColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 246A50640CD87B7446B28C00 /* AVHexColor.h */; };
 		B80B9A45A5F4A99255F751FA /* XBExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11DA110CF3169C1EA7779D /* XBExtension.h */; };
 		BA9932CC8D7D156D08B7F78B /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = A486A917C971D9F6B5F9105C /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -460,6 +461,8 @@
 		B5CA370DE47EA7C7293B1E79 /* EXPMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcher.h; path = Expecta/EXPMatcher.h; sourceTree = "<group>"; };
 		B695F9C41B469C6900BCFF5D /* UITextField+XBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+XBExtension.h"; path = "Pod/Classes/UITextField+XBExtension.h"; sourceTree = "<group>"; };
 		B695F9C51B469C6900BCFF5D /* UITextField+XBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+XBExtension.m"; path = "Pod/Classes/UITextField+XBExtension.m"; sourceTree = "<group>"; };
+		B6B906CC1B5BEF82000B1721 /* UILabel+XBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+XBExtension.h"; path = "Pod/Classes/UILabel+XBExtension.h"; sourceTree = "<group>"; };
+		B6B906CD1B5BEF82000B1721 /* UILabel+XBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+XBExtension.m"; path = "Pod/Classes/UILabel+XBExtension.m"; sourceTree = "<group>"; };
 		B79D86723D93D567FD650860 /* NSDate+XBExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+XBExtension.h"; path = "Pod/Classes/NSDate+XBExtension.h"; sourceTree = "<group>"; };
 		B7CBA495C0A75A9C1C2EAD97 /* Pods-Tests-Expecta+Snapshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-Expecta+Snapshots.xcconfig"; sourceTree = "<group>"; };
 		B974104D186381A168E1E48F /* Pods-Tests-Expecta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-Expecta-Private.xcconfig"; sourceTree = "<group>"; };
@@ -666,6 +669,8 @@
 				11A8E3F9E7AADA57ACF99E03 /* Support Files */,
 				B695F9C41B469C6900BCFF5D /* UITextField+XBExtension.h */,
 				B695F9C51B469C6900BCFF5D /* UITextField+XBExtension.m */,
+				B6B906CC1B5BEF82000B1721 /* UILabel+XBExtension.h */,
+				B6B906CD1B5BEF82000B1721 /* UILabel+XBExtension.m */,
 			);
 			name = XBExtension;
 			path = ../..;
@@ -1526,6 +1531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B5D873DDAD011AEBAD71D2 /* Pods-Tests-dummy.m in Sources */,
+				B6B906CE1B5BEF82000B1721 /* UILabel+XBExtension.m in Sources */,
 				B695F9C61B469C6900BCFF5D /* UITextField+XBExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
