@@ -43,16 +43,16 @@ NSString * const kReplacementSet = @"kReplacementSet";
 
 - (NSDictionary *)replacementSet
 {
-    return objc_getAssociatedObject(self, (__bridge const void *)(kDisabledCharacterSet));
+    return objc_getAssociatedObject(self, (__bridge const void *)(kReplacementSet));
 }
 
 - (void)didChangeText:(id)sender
 {
-    self.text = [[self.text componentsSeparatedByCharactersInSet:self.disabledCharacterSet] componentsJoinedByString:@""];
     for (NSString *key in self.replacementSet)
     {
         self.text = [self.text stringByReplacingOccurrencesOfString:key withString:self.replacementSet[key]];
     }
+    self.text = [[self.text componentsSeparatedByCharactersInSet:self.disabledCharacterSet] componentsJoinedByString:@""];
 }
 
 - (void)activeUsernameLimitation
