@@ -11,6 +11,7 @@
 @interface UITextField (XBExtension)
 
 @property (nonatomic, retain) NSCharacterSet *disabledCharacterSet;
+@property (nonatomic, retain) NSDictionary *replacementSet;
 
 - (void)activeUsernameLimitation;
 - (void)activePasswordLimitation;
