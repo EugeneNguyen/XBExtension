@@ -43,8 +43,8 @@
 - (NSArray *)arrayOrderedByNumber:(NSString *)orderField accending:(BOOL)accending
 {
     return [self sortedArrayUsingComparator:^NSComparisonResult(id  __nonnull obj1, id  __nonnull obj2) {
-        float f1 = [[obj1 objectForKey:orderField] floatValue];
-        float f2 = [[obj2 objectForKey:orderField] floatValue];
+        float f1 = [[obj1 performSelector:NSSelectorFromString(orderField)] floatValue];
+        float f2 = [[obj2 performSelector:NSSelectorFromString(orderField)] floatValue];
         NSComparisonResult result;
         if (f1 > f2)
         {
