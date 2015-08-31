@@ -8,13 +8,12 @@
 
 #import "NSObject+XBExtension.h"
 #import <UIKit/UIKit.h>
-#import "XBLanguage.h"
 
 @implementation NSObject (XBExtension)
 
 - (void)alert:(NSString *)title message:(NSString *)message
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:XBText(@"Close", nil) otherButtonTitles: nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"Close" otherButtonTitles: nil];
     [alert show];
 }
 
