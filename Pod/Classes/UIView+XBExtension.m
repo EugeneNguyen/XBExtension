@@ -61,4 +61,13 @@
     }
 }
 
+- (void)animation:(CGFloat)duration
+{
+    [self setNeedsUpdateConstraints];
+    [UIView animateWithDuration:duration
+                     animations:^{
+                         [self layoutIfNeeded];
+                     }];
+}
+
 @end

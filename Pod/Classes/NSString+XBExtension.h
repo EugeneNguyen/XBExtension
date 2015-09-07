@@ -14,4 +14,6 @@
 - (NSString *)convertFromDateFormat:(NSString *)fromFormat toDateFormat:(NSString *)toFormat;
 - (NSString *)stringValue;
 
+- (BOOL)isNumeric;
+
 @end

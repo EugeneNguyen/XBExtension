@@ -16,5 +16,6 @@
 - (void)removeAllSubviews;
 
 - (void)addTapTarget:(id)target action:(SEL)selector;
+- (void)animation:(CGFloat)duration;
 
 @end

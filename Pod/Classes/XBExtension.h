@@ -15,3 +15,5 @@
 #import "NSDate+XBExtension.h"
 #import "UITextField+XBExtension.h"
 #import "UILabel+XBExtension.h"
+#import "UIButton+XBExtension.h"
+#import "UIImageView+XBExtension.h"

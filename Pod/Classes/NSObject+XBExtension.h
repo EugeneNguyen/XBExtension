@@ -19,4 +19,6 @@
 
 - (void)hideHUD;
 
+- (id)deepMutableCopy;
+
 @end

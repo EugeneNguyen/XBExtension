@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#define XBArray(X) [NSArray arrayWithContentsOfPlist:X]
+
 @interface NSArray (XBExtension)
 
-+ (NSArray *)arrayWithContentsOfPlist:(NSString *)plistname;
-+ (NSArray *)arrayWithContentsOfPlist:(NSString *)plistname bundleName:(NSString *)name;
++ (NSMutableArray *)arrayWithContentsOfPlist:(NSString *)plistname;
++ (NSMutableArray *)arrayWithContentsOfPlist:(NSString *)plistname bundleName:(NSString *)name;
 - (NSArray *)arrayOrderedByString:(NSString *)orderField accending:(BOOL)accending;
 - (NSArray *)arrayOrderedByNumber:(NSString *)orderField accending:(BOOL)accending;
 

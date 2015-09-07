@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+#define XBDictionary(X) [NSDictionary dictionaryWithContentsOfPlist:X]
+
 @interface NSDictionary (XBExtension)
 
-+ (NSDictionary *)dictionaryWithContentsOfPlist:(NSString *)plistname;
-+ (NSDictionary *)dictionaryWithContentsOfPlist:(NSString *)plistname bundleName:(NSString *)name;
++ (NSMutableDictionary *)dictionaryWithContentsOfPlist:(NSString *)plistname;
++ (NSMutableDictionary *)dictionaryWithContentsOfPlist:(NSString *)plistname bundleName:(NSString *)name;
 
 @end

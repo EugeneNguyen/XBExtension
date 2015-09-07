@@ -29,4 +29,11 @@
     return self;
 }
 
+- (BOOL)isNumeric
+{
+    NSCharacterSet *alphaNums = [NSCharacterSet decimalDigitCharacterSet];
+    NSCharacterSet *inStringSet = [NSCharacterSet characterSetWithCharactersInString:self];
+    return [alphaNums isSupersetOfSet:inStringSet];
+}
+
 @end

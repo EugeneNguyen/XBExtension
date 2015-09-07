@@ -10,17 +10,17 @@
 
 @implementation NSArray (XBExtension)
 
-+ (NSArray *)arrayWithContentsOfPlist:(NSString *)plistname
++ (NSMutableArray *)arrayWithContentsOfPlist:(NSString *)plistname
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:plistname ofType:@"plist"];
-    return [NSArray arrayWithContentsOfFile:path];
+    return [[NSArray arrayWithContentsOfFile:path] deepMutableCopy];
 }
 
-+ (NSArray *)arrayWithContentsOfPlist:(NSString *)plistname bundleName:(NSString *)name
++ (NSMutableArray *)arrayWithContentsOfPlist:(NSString *)plistname bundleName:(NSString *)name
 {
     NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:name ofType:@"bundle"]];
     NSString *path = [bundle pathForResource:plistname ofType:@"plist"];
-    return [NSArray arrayWithContentsOfFile:path];
+    return [[NSArray arrayWithContentsOfFile:path] deepMutableCopy];
 }
 
 - (NSArray *)arrayOrderedByString:(NSString *)orderField accending:(BOOL)accending
