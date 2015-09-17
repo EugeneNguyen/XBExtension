@@ -11,6 +11,15 @@
 
 @implementation NSString (XBExtension)
 
++ (NSString *)uuidString
+{
+    CFUUIDRef uuid = CFUUIDCreate(kCFAllocatorDefault);
+    NSString *uuidString = (__bridge_transfer NSString *)CFUUIDCreateString(kCFAllocatorDefault, uuid);
+    CFRelease(uuid);
+    
+    return uuidString;
+}
+
 - (NSDate *)dateWithFormat:(NSString *)format
 {
     NSDateFormatter *df = [[NSDateFormatter alloc] init];

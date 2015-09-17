@@ -17,3 +17,4 @@
 #import "UILabel+XBExtension.h"
 #import "UIButton+XBExtension.h"
 #import "UIImageView+XBExtension.h"
+#import "NSString+XBExtension.h"
