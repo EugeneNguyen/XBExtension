@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "XBExtension"
-  s.version          = "0.3.7.1"
+  s.version          = "0.3.8"
   s.summary          = "A lot of category class, give a short way to make everything easier for development"
   s.description      = <<-DESC
                        A lot of category class, give a short way to make everything easier for development
@@ -38,4 +38,5 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AVHexColor'
   s.dependency 'MBProgressHUD'
+  s.dependency 'FontAwesomeKit'
 end

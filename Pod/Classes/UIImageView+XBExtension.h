@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImageView (XBExtension)
+
 @property (nonatomic, assign) NSString *imageName;
+@property (nonatomic, assign) NSString *faIconName;
 
 @end

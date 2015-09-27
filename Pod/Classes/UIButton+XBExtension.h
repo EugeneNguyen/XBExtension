@@ -11,6 +11,10 @@
 @interface UIButton (XBExtension)
 @property (nonatomic, assign) NSString *imageName;
 @property (nonatomic, assign) NSString *backgroundImageName;
+
+@property (nonatomic, assign) NSString *faIconName;
+@property (nonatomic, assign) NSString *faBackgroundIconName;
+
 @property (nonatomic, assign) NSString *title;
 
 @end
