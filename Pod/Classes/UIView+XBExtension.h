@@ -18,4 +18,6 @@
 - (void)addTapTarget:(id)target action:(SEL)selector;
 - (void)animation:(CGFloat)duration;
 
+- (UITableViewCell *)nearestTableViewCell;
+
 @end

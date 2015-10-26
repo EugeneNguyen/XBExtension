@@ -70,4 +70,18 @@
                      }];
 }
 
+- (UITableViewCell *)nearestTableViewCell
+{
+    UIView *superView = self.superview;
+    if (superView == nil)
+    {
+        return nil;
+    }
+    if ([superView isKindOfClass:[UITableViewCell class]])
+    {
+        return (UITableViewCell *)superView;
+    }
+    return [superView nearestTableViewCell];
+}
+
 @end
