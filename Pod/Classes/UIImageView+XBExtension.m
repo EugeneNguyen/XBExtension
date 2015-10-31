@@ -19,7 +19,7 @@
     NSString *code = [[allIcon allKeysForObject:faIconName] lastObject];
     if (code)
     {
-        FAKFontAwesome *icon = [FAKFontAwesome iconWithCode:code size:48];
+        FAKFontAwesome *icon = [FAKFontAwesome iconWithCode:code size:self.frame.size.height * [UIScreen mainScreen].scale];
         [icon addAttribute:NSForegroundColorAttributeName value:self.tintColor];
         self.image = [icon imageWithSize:CGSizeMake(self.frame.size.width * [UIScreen mainScreen].scale, self.frame.size.height * [UIScreen mainScreen].scale)];
     }

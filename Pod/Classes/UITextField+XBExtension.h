@@ -12,6 +12,7 @@
 
 @property (nonatomic, retain) NSCharacterSet *disabledCharacterSet;
 @property (nonatomic, retain) NSDictionary *replacementSet;
+@property (nonatomic, retain) NSString *faLeftIcon;
 
 - (void)activeUsernameLimitation;
 - (void)activePasswordLimitation;

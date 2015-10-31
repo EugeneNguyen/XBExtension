@@ -75,7 +75,12 @@
 
 - (void)alert:(NSString *)title message:(NSString *)message
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"Close" otherButtonTitles: nil];
+    [self alert:title message:message close:@"Close"];
+}
+
+- (void)alert:(NSString *)title message:(NSString *)message close:(NSString *)close
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:close otherButtonTitles: nil];
     [alert show];
 }
 

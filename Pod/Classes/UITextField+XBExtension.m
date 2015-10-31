@@ -8,6 +8,7 @@
 
 #import "UITextField+XBExtension.h"
 #import <objc/runtime.h>
+#import <UIImageView+XBExtension.h>
 
 NSString * const kDisabledCharacterSet = @"kDisabledCharacterSet";
 NSString * const kReplacementSet = @"kReplacementSet";
@@ -15,6 +16,17 @@ NSString * const kReplacementSet = @"kReplacementSet";
 @implementation UITextField (XBExtension)
 @dynamic disabledCharacterSet;
 @dynamic replacementSet;
+
+- (void)setFaLeftIcon:(NSString *)faLeftIcon
+{
+    CGFloat height = self.frame.size.height;
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, height, height)];
+    imageView.tintColor = self.tintColor;
+    imageView.faIconName = faLeftIcon;
+    
+    self.leftViewMode = UITextFieldViewModeAlways;
+    self.leftView = imageView;
+}
 
 - (void)setDisabledCharacterSet:(NSCharacterSet *)disabledCharacterSet
 {
@@ -61,7 +73,7 @@ NSString * const kReplacementSet = @"kReplacementSet";
     self.replacementSet = @{@" ": @"_"};
 }
 
-- (void)s
+- (void)activePasswordLimitation
 {
     self.disabledCharacterSet = [[NSCharacterSet characterSetWithCharactersInString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_."] invertedSet];
 }

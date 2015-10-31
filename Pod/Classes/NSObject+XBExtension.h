@@ -15,6 +15,8 @@
 
 - (void)alert:(NSString *)title message:(NSString *)message;
 
+- (void)alert:(NSString *)title message:(NSString *)message close:(NSString *)close;
+
 - (MBProgressHUD *)showHUD:(NSString *)string;
 
 - (void)hideHUD;
